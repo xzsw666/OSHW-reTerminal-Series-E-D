@@ -1,0 +1,1173 @@
+{
+  "firmware": [
+    {
+      "id": "XIAO_EPaper_Hello_EE02_P133_SP6",
+      "name": "Hello ePaper EE02 + P133_SP6",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE02"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE03_P103_MONO",
+      "name": "Hello ePaper EE03 + P103_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE03"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P073_SP6",
+      "name": "Hello ePaper EE04 + P073_SP6",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P075_MONO",
+      "name": "Hello ePaper EE04 + P075_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P0583_MONO",
+      "name": "Hello ePaper EE04 + P0583_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P0426_MONO",
+      "name": "Hello ePaper EE04 + P0426_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P042_MONO",
+      "name": "Hello ePaper EE04 + P042_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P029_MONO",
+      "name": "Hello ePaper EE04 + P029_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P029_QUAD",
+      "name": "Hello ePaper EE04 + P029_QUAD",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P0213_MONO",
+      "name": "Hello ePaper EE04 + P0213_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P0213_QUAD",
+      "name": "Hello ePaper EE04 + P0213_QUAD",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE04_P0154_MONO",
+      "name": "Hello ePaper EE04 + P0154_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE05_P075_MONO",
+      "name": "Hello ePaper EE05 + P075_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE05_P0583_MONO",
+      "name": "Hello ePaper EE05 + P0583_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE05_P0426_MONO",
+      "name": "Hello ePaper EE05 + P0426_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE05_P042_MONO",
+      "name": "Hello ePaper EE05 + P042_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE05_P029_MONO",
+      "name": "Hello ePaper EE05 + P029_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE05_P029_QUAD",
+      "name": "Hello ePaper EE05 + P029_QUAD",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE05_P0213_MONO",
+      "name": "Hello ePaper EE05 + P0213_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE05_P0213_QUAD",
+      "name": "Hello ePaper EE05 + P0213_QUAD",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EE05_P0154_MONO",
+      "name": "Hello ePaper EE05 + P0154_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P073_SP6",
+      "name": "Hello ePaper EN04 + P073_SP6",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P075_MONO",
+      "name": "Hello ePaper EN04 + P075_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P0583_MONO",
+      "name": "Hello ePaper EN04 + P0583_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P0426_MONO",
+      "name": "Hello ePaper EN04 + P0426_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P042_MONO",
+      "name": "Hello ePaper EN04 + P042_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P029_MONO",
+      "name": "Hello ePaper EN04 + P029_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P029_QUAD",
+      "name": "Hello ePaper EN04 + P029_QUAD",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P0213_MONO",
+      "name": "Hello ePaper EN04 + P0213_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P0213_QUAD",
+      "name": "Hello ePaper EN04 + P0213_QUAD",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN04_P0154_MONO",
+      "name": "Hello ePaper EN04 + P0154_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN04"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN05_P075_MONO",
+      "name": "Hello ePaper EN05 + P075_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN05_P0583_MONO",
+      "name": "Hello ePaper EN05 + P0583_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN05_P0426_MONO",
+      "name": "Hello ePaper EN05 + P0426_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN05_P042_MONO",
+      "name": "Hello ePaper EN05 + P042_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN05_P029_MONO",
+      "name": "Hello ePaper EN05 + P029_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN05_P029_QUAD",
+      "name": "Hello ePaper EN05 + P029_QUAD",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN05_P0213_MONO",
+      "name": "Hello ePaper EN05 + P0213_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN05_P0213_QUAD",
+      "name": "Hello ePaper EN05 + P0213_QUAD",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "XIAO_EPaper_Hello_EN05_P0154_MONO",
+      "name": "Hello ePaper EN05 + P0154_MONO",
+      "path": "examples/base/XIAO_EPaper_Hello",
+      "tool": "arduino",
+      "compatible": [
+        "EN05"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "SenseCraft_HMI_E1001",
+      "name": "SenseCraft HMI for E1001",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_E1002",
+      "name": "SenseCraft HMI for E1002",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "E1002"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_E1003",
+      "name": "SenseCraft HMI for E1003",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_E1004",
+      "name": "SenseCraft HMI for E1004",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "E1004"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE02_P133_SP6",
+      "name": "SenseCraft HMI for EE02 + P133_SP6",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE02"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE03_P103_MONO",
+      "name": "SenseCraft HMI for EE03 + P103_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE03"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE04_P0154_MONO",
+      "name": "SenseCraft HMI for EE04 + P0154_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE04_P0213_MONO",
+      "name": "SenseCraft HMI for EE04 + P0213_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE04_P0213_QUAD",
+      "name": "SenseCraft HMI for EE04 + P0213_QUAD",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE04_P029_MONO",
+      "name": "SenseCraft HMI for EE04 + P029_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE04_P029_QUAD",
+      "name": "SenseCraft HMI for EE04 + P029_QUAD",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE04_P0426_MONO",
+      "name": "SenseCraft HMI for EE04 + P0426_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE04_P073_SP6",
+      "name": "SenseCraft HMI for EE04 + P073_SP6",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE04_P075_MONO",
+      "name": "SenseCraft HMI for EE04 + P075_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE04"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE05_P0154_MONO",
+      "name": "SenseCraft HMI for EE05 + P0154_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE05_P0213_MONO",
+      "name": "SenseCraft HMI for EE05 + P0213_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE05_P0213_QUAD",
+      "name": "SenseCraft HMI for EE05 + P0213_QUAD",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE05_P029_MONO",
+      "name": "SenseCraft HMI for EE05 + P029_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE05_P029_QUAD",
+      "name": "SenseCraft HMI for EE05 + P029_QUAD",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE05_P0426_MONO",
+      "name": "SenseCraft HMI for EE05 + P0426_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "SenseCraft_HMI_EE05_P075_MONO",
+      "name": "SenseCraft HMI for EE05 + P075_MONO",
+      "path": "examples/official/SenseCraft_HMI",
+      "tool": "platformio",
+      "compatible": [
+        "EE05"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "Bus_Arrival_Display",
+      "name": "Bus Arrival Display for E1001",
+      "path": "examples/community/Bus_Arrival_Display",
+      "tool": "arduino",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false,
+      "group": "community"
+    },
+    {
+      "id": "RTC_PCF8563",
+      "name": "RTC PCF8563",
+      "path": "examples/base/RTC_PCF8563",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002",
+        "E1003",
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "LowPower_DeepSleep",
+      "name": "Low Power Deep Sleep",
+      "path": "examples/base/LowPower_DeepSleep",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002",
+        "E1003",
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "MicRecordToSD_E1001",
+      "name": "Mic Record to SD for E1001/E1002",
+      "path": "examples/base/MicRecordToSD",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "MicRecordToSD_E1003",
+      "name": "Mic Record to SD for E1003",
+      "path": "examples/base/MicRecordToSD",
+      "tool": "arduino",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "E1003_TouchDraw",
+      "name": "E1003 Touch Draw",
+      "path": "examples/base/E1003_TouchDraw",
+      "tool": "arduino",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "LED_Control_E1001",
+      "name": "LED Control for E1001/E1002",
+      "path": "examples/base/LED_Control",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "LED_Control_E1003",
+      "name": "LED Control for E1003",
+      "path": "examples/base/LED_Control",
+      "tool": "arduino",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "LED_Control_E1004",
+      "name": "LED Control for E1004",
+      "path": "examples/base/LED_Control",
+      "tool": "arduino",
+      "compatible": [
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "Buzzer_Control",
+      "name": "Buzzer Control",
+      "path": "examples/base/Buzzer_Control",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002",
+        "E1003",
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "Buzzer_Music",
+      "name": "Buzzer Music",
+      "path": "examples/base/Buzzer_Music",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002",
+        "E1003",
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "UserButtons",
+      "name": "User Buttons",
+      "path": "examples/base/UserButtons",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002",
+        "E1003",
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "Battery_Monitor",
+      "name": "Battery Monitor",
+      "path": "examples/base/Battery_Monitor",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002",
+        "E1003",
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "MicroSD_ListFiles",
+      "name": "MicroSD List Files",
+      "path": "examples/base/MicroSD_ListFiles",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002",
+        "E1003",
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "GxEPD2_reTerminal_E1001",
+      "name": "GxEPD2 reTerminal E1001",
+      "path": "examples/base/GxEPD2_reTerminal_E1001",
+      "tool": "arduino",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "GxEPD2_reTerminal_E1002",
+      "name": "GxEPD2 reTerminal E1002",
+      "path": "examples/base/GxEPD2_reTerminal_E1002",
+      "tool": "arduino",
+      "compatible": [
+        "E1002"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "GxEPD2_reTerminal_E1003",
+      "name": "GxEPD2 reTerminal E1003",
+      "path": "examples/base/GxEPD2_reTerminal_E1003",
+      "tool": "arduino",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "GxEPD2_reTerminal_E1004",
+      "name": "GxEPD2 reTerminal E1004",
+      "path": "examples/base/GxEPD2_reTerminal_E1004",
+      "tool": "arduino",
+      "compatible": [
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "GxEPD2_reTerminal_E1001_Gray4",
+      "name": "GxEPD2 reTerminal E1001 Gray4",
+      "path": "examples/base/GxEPD2_reTerminal_E1001_Gray4",
+      "tool": "arduino",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "Seeed_GFX_E1001_Gray4",
+      "name": "Seeed GFX E1001 Gray4",
+      "path": "examples/base/Seeed_GFX_E1001_Gray4",
+      "tool": "arduino",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "GxEPD2_reTerminal_E1003_Gray16",
+      "name": "GxEPD2 reTerminal E1003 Gray16",
+      "path": "examples/base/GxEPD2_reTerminal_E1003_Gray16",
+      "tool": "arduino",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "SHT4x_Sensor",
+      "name": "SHT4x Sensor",
+      "path": "examples/base/SHT4x_Sensor",
+      "tool": "arduino",
+      "compatible": [
+        "E1001",
+        "E1002",
+        "E1003",
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "E1001_ChineseTextDemo",
+      "name": "E1001 Chinese Text Demo",
+      "path": "examples/base/E1001_ChineseTextDemo",
+      "tool": "arduino",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "E1002_ChineseTextDemo",
+      "name": "E1002 Chinese Text Demo",
+      "path": "examples/base/E1002_ChineseTextDemo",
+      "tool": "arduino",
+      "compatible": [
+        "E1002"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "E1003_ChineseTextDemo",
+      "name": "E1003 Chinese Text Demo",
+      "path": "examples/base/E1003_ChineseTextDemo",
+      "tool": "arduino",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "E1004_ChineseTextDemo",
+      "name": "E1004 Chinese Text Demo",
+      "path": "examples/base/E1004_ChineseTextDemo",
+      "tool": "arduino",
+      "compatible": [
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "SD_ImagePipeline_E1001_BW",
+      "name": "SD Image Pipeline E1001 BW",
+      "path": "examples/base/SD_ImagePipeline_E1001_BW",
+      "tool": "arduino",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "SD_ImagePipeline_E1001_Gray4",
+      "name": "SD Image Pipeline E1001 Gray4",
+      "path": "examples/base/SD_ImagePipeline_E1001_Gray4",
+      "tool": "arduino",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "SD_ImagePipeline_E1002",
+      "name": "SD Image Pipeline E1002",
+      "path": "examples/base/SD_ImagePipeline_E1002",
+      "tool": "arduino",
+      "compatible": [
+        "E1002"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "SD_ImagePipeline_E1003",
+      "name": "SD Image Pipeline E1003",
+      "path": "examples/base/SD_ImagePipeline_E1003",
+      "tool": "arduino",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "SD_ImagePipeline_E1004",
+      "name": "SD Image Pipeline E1004",
+      "path": "examples/base/SD_ImagePipeline_E1004",
+      "tool": "arduino",
+      "compatible": [
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "E1003_SDcard_Slideshow",
+      "name": "E1003 SD Card Slideshow",
+      "path": "examples/base/E1003_SDcard_Slideshow",
+      "tool": "arduino",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "E1004_SDcard_Slideshow",
+      "name": "E1004 SD Card Slideshow",
+      "path": "examples/base/E1004_SDcard_Slideshow",
+      "tool": "arduino",
+      "compatible": [
+        "E1004"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "TRMNL_reTerminal_E1001",
+      "name": "TRMNL for reTerminal E1001",
+      "path": "examples/official/TRMNL",
+      "tool": "platformio",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "TRMNL_reTerminal_E1002",
+      "name": "TRMNL for reTerminal E1002",
+      "path": "examples/official/TRMNL",
+      "tool": "platformio",
+      "compatible": [
+        "E1002"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "TRMNL_reTerminal_E1003",
+      "name": "TRMNL for reTerminal E1003",
+      "path": "examples/official/TRMNL",
+      "tool": "platformio",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "TRMNL_reTerminal_E1004",
+      "name": "TRMNL for reTerminal E1004",
+      "path": "examples/official/TRMNL_E1004",
+      "tool": "platformio",
+      "compatible": [
+        "E1004"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "LVGL_StatusPanel_E1001",
+      "name": "LVGL ePaper Status Panel for E1001",
+      "path": "examples/official/LVGLePaperStatusPanel",
+      "tool": "platformio",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "LVGL_StatusPanel_E1002",
+      "name": "LVGL ePaper Status Panel for E1002",
+      "path": "examples/official/LVGLePaperStatusPanel",
+      "tool": "platformio",
+      "compatible": [
+        "E1002"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "LVGL_StatusPanel_E1003",
+      "name": "LVGL ePaper Status Panel for E1003",
+      "path": "examples/official/LVGLePaperStatusPanel",
+      "tool": "platformio",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "LVGL_StatusPanel_E1004",
+      "name": "LVGL ePaper Status Panel for E1004",
+      "path": "examples/official/LVGLePaperStatusPanel",
+      "tool": "platformio",
+      "compatible": [
+        "E1004"
+      ],
+      "autoDiscovered": false,
+      "group": "official"
+    },
+    {
+      "id": "ePaper_VoiceMemo_E1001",
+      "name": "Voice Memo Reminder for E1001",
+      "path": "examples/community/ePaper-Voice-Memo",
+      "tool": "platformio",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "ePaper_VoiceMemo_E1002",
+      "name": "Voice Memo Reminder for E1002",
+      "path": "examples/community/ePaper-Voice-Memo",
+      "tool": "platformio",
+      "compatible": [
+        "E1002"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "ePaper_VoiceMemo_E1003",
+      "name": "Voice Memo Reminder for E1003",
+      "path": "examples/community/ePaper-Voice-Memo",
+      "tool": "platformio",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "ePaper_VoiceMemo_E1001_ZH",
+      "name": "Voice Memo Reminder Chinese for E1001",
+      "path": "examples/community/ePaper-Voice-Memo",
+      "tool": "platformio",
+      "compatible": [
+        "E1001"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "ePaper_VoiceMemo_E1002_ZH",
+      "name": "Voice Memo Reminder Chinese for E1002",
+      "path": "examples/community/ePaper-Voice-Memo",
+      "tool": "platformio",
+      "compatible": [
+        "E1002"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "ePaper_VoiceMemo_E1003_ZH",
+      "name": "Voice Memo Reminder Chinese for E1003",
+      "path": "examples/community/ePaper-Voice-Memo",
+      "tool": "platformio",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false
+    },
+    {
+      "id": "PhotoFrame_reTerminal_E1002",
+      "name": "ESP32 PhotoFrame for E1002",
+      "path": "",
+      "tool": "external",
+      "compatible": [
+        "E1002"
+      ],
+      "autoDiscovered": false,
+      "group": "community"
+    },
+    {
+      "id": "PhotoFrame_reTerminal_E1003",
+      "name": "ESP32 PhotoFrame for E1003",
+      "path": "",
+      "tool": "external",
+      "compatible": [
+        "E1003"
+      ],
+      "autoDiscovered": false,
+      "group": "community"
+    },
+    {
+      "id": "PhotoFrame_reTerminal_E1004",
+      "name": "ESP32 PhotoFrame for E1004",
+      "path": "",
+      "tool": "external",
+      "compatible": [
+        "E1004"
+      ],
+      "autoDiscovered": false,
+      "group": "community"
+    }
+  ]
+}

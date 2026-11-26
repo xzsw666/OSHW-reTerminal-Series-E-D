@@ -1,0 +1,267 @@
+const assert = require("node:assert/strict");
+const {
+  PLATFORM_CARDS,
+  BOARDS,
+  PANELS,
+  getCompatiblePanels,
+  getCompatiblePlatforms,
+  groupSupportedHardware,
+  isDriverBoard,
+  getHardware,
+  resolveComboFirmwareId,
+} = require("./firmwares.js");
+
+const SUPPORTED_INSTALL_MODES = new Set(["standard", "erase"]);
+
+const firmwareOptions = PLATFORM_CARDS.flatMap((platform) => platform.firmwareOptions || []);
+for (const option of firmwareOptions) {
+  if (!option.recommendedInstallMode) continue;
+  assert.ok(
+    SUPPORTED_INSTALL_MODES.has(option.recommendedInstallMode),
+    `${option.id} has an unsupported recommendedInstallMode`
+  );
+}
+
+const officialWikiUrls = new Map([
+  ["sensecraft-hmi", "https://wiki.seeedstudio.com/EE04_with_hmi/"],
+  ["esphome", "https://wiki.seeedstudio.com/epaper_work_with_esphome/"],
+  ["trmnl", "https://wiki.seeedstudio.com/reterminal_e10xx_trmnl/"],
+  ["eezstudio", "https://wiki.seeedstudio.com/reterminal_e10xx_with_eezstudio/"],
+  ["lvgl-epaper-status-panel", "https://wiki.seeedstudio.com/epaper_work_with_lvgl"],
+  ["zephyr", "https://wiki.seeedstudio.com/epaper_work_with_zephyr/"],
+  ["squareline", "https://wiki.seeedstudio.com/reterminal_e10xx_with_squareline_vision/"],
+  ["opendisplay", "https://wiki.seeedstudio.com/EN04_opendisplay/"],
+  ["tesserae", "https://wiki.seeedstudio.com/reterminal_e10xx_tesserae/"],
+]);
+
+for (const [platformId, wikiUrl] of officialWikiUrls) {
+  const platform = PLATFORM_CARDS.find((item) => item.id === platformId);
+  assert.ok(platform, `${platformId} platform is registered`);
+  assert.equal(platform.wiki?.url, wikiUrl, `${platformId} wiki URL is registered`);
+}
+
+const sensecraftHmi = PLATFORM_CARDS.find((platform) => platform.id === "sensecraft-hmi");
+assert.ok(sensecraftHmi, "SenseCraft HMI platform is registered");
+assert.equal(sensecraftHmi.group, "official");
+assert.equal(sensecraftHmi.installReady, true);
+assert.equal(sensecraftHmi.source?.url, "https://sensecraft.seeed.cc/hmi/");
+assert.equal(sensecraftHmi.logo, "assets/platforms/sensecraft-hmi-logo.svg");
+assert.deepEqual(
+  sensecraftHmi.supportedDevices,
+  ["E1001", "E1002", "E1003", "E1004", "EE02", "EE03", "EE04", "EE05"]
+);
+assert.deepEqual(
+  sensecraftHmi.firmwareOptions.slice(0, 4).map((option) => option.id),
+  [
+    "SenseCraft_HMI_E1001",
+    "SenseCraft_HMI_E1002",
+    "SenseCraft_HMI_E1003",
+    "SenseCraft_HMI_E1004",
+  ]
+);
+const sensecraftDiyOption = sensecraftHmi.firmwareOptions.at(-1);
+assert.equal(sensecraftDiyOption.comboPattern, "SenseCraft_HMI_{board}_{panel}");
+assert.equal(
+  resolveComboFirmwareId(sensecraftDiyOption, "EE04", "P073_SP6"),
+  "SenseCraft_HMI_EE04_P073_SP6"
+);
+assert.deepEqual(
+  getCompatiblePanels("EE04", sensecraftDiyOption).map((panel) => panel.id).sort(),
+  [
+    "P0154_MONO",
+    "P0213_MONO",
+    "P0213_QUAD",
+    "P029_MONO",
+    "P029_QUAD",
+    "P0426_MONO",
+    "P073_SP6",
+    "P075_MONO",
+  ].sort()
+);
+
+const trmnlPlatform = PLATFORM_CARDS.find((platform) => platform.id === "trmnl");
+assert.ok(trmnlPlatform, "TRMNL platform is registered");
+assert.equal(trmnlPlatform.installReady, true);
+assert.deepEqual(trmnlPlatform.supportedDevices, ["E1001", "E1002", "E1003", "E1004"]);
+assert.deepEqual(
+  trmnlPlatform.firmwareOptions.map((option) => option.id),
+  [
+    "TRMNL_reTerminal_E1001",
+    "TRMNL_reTerminal_E1002",
+    "TRMNL_reTerminal_E1003",
+    "TRMNL_reTerminal_E1004",
+  ]
+);
+assert.ok(
+  trmnlPlatform.firmwareOptions.every((option) => option.defaultVersion === "1.8.10")
+);
+
+const zephyrPlatform = PLATFORM_CARDS.find((platform) => platform.id === "zephyr");
+assert.ok(zephyrPlatform, "Zephyr platform is registered");
+assert.equal(zephyrPlatform.group, "official");
+assert.equal(zephyrPlatform.installReady, false);
+assert.equal(zephyrPlatform.logo, "assets/platforms/zephyr-logo.png");
+assert.deepEqual(zephyrPlatform.supportedDevices, ["E1001", "E1002", "E1003"]);
+assert.equal(zephyrPlatform.externalTool?.stepTitle, "Official docs");
+assert.equal(zephyrPlatform.externalTool?.label, "Open Zephyr Board Docs");
+assert.deepEqual(
+  zephyrPlatform.externalTool?.urlsByDevice,
+  {
+    E1001: "https://docs.zephyrproject.org/latest/boards/seeed/reterminal_e1001/doc/index.html",
+    E1002: "https://docs.zephyrproject.org/latest/boards/seeed/reterminal_e1002/doc/index.html",
+    E1003: "https://docs.zephyrproject.org/latest/boards/seeed/reterminal_e1003/doc/index.html",
+  }
+);
+assert.deepEqual(zephyrPlatform.versions, []);
+assert.deepEqual(zephyrPlatform.configFields, []);
+assert.deepEqual(zephyrPlatform.firmwareOptions, []);
+
+const tesseraePlatform = PLATFORM_CARDS.find((platform) => platform.id === "tesserae");
+assert.ok(tesseraePlatform, "Tesserae platform is registered");
+assert.equal(tesseraePlatform.group, "official");
+assert.equal(tesseraePlatform.installReady, false);
+assert.equal(tesseraePlatform.source?.url, "https://tesserae.ink/");
+assert.equal(tesseraePlatform.logo, "assets/platforms/tesserae-logo.svg");
+assert.deepEqual(
+  tesseraePlatform.supportedDevices,
+  ["E1001", "E1002", "E1003", "E1004", "EE02", "EE03"]
+);
+assert.equal(tesseraePlatform.externalTool?.stepTitle, "Tesserae flasher");
+assert.equal(tesseraePlatform.externalTool?.label, "Open the Tesserae flasher");
+assert.deepEqual(
+  tesseraePlatform.externalTool?.urlsByDevice,
+  {
+    E1001: "https://tesserae.ink/flash?device=seeed-reterminal-e1001",
+    E1002: "https://tesserae.ink/flash?device=seeed-reterminal-e1002",
+    E1003: "https://tesserae.ink/flash?device=seeed-reterminal-e1003",
+    E1004: "https://tesserae.ink/flash?device=seeed-reterminal-e1004",
+    EE02: "https://tesserae.ink/flash?device=seeed-ee02",
+    EE03: "https://tesserae.ink/flash?device=seeed-ee03",
+  }
+);
+assert.deepEqual(tesseraePlatform.versions, []);
+assert.deepEqual(tesseraePlatform.configFields, []);
+assert.deepEqual(tesseraePlatform.firmwareOptions, []);
+
+const lvglStatusPanel = PLATFORM_CARDS.find((platform) =>
+  platform.id === "lvgl-epaper-status-panel"
+);
+assert.ok(lvglStatusPanel, "LVGL ePaper Status Panel platform is registered");
+assert.equal(lvglStatusPanel.group, "official");
+assert.equal(lvglStatusPanel.installReady, true);
+assert.deepEqual(
+  lvglStatusPanel.supportedDevices,
+  ["E1001", "E1002", "E1003", "E1004"]
+);
+assert.deepEqual(lvglStatusPanel.detailTags, ["LVGL 9.5.0"]);
+assert.deepEqual(
+  lvglStatusPanel.firmwareOptions.map((option) => option.id),
+  [
+    "LVGL_StatusPanel_E1001",
+    "LVGL_StatusPanel_E1002",
+    "LVGL_StatusPanel_E1003",
+    "LVGL_StatusPanel_E1004",
+  ]
+);
+
+const photoframePlatform = PLATFORM_CARDS.find((platform) => platform.id === "photoframe");
+assert.ok(photoframePlatform, "PhotoFrame platform is registered");
+assert.equal(photoframePlatform.installReady, true);
+// Versions mirror the latest upstream release at deploy time; the UI must rely
+// on firmware/versions.json only, with no stale hardcoded fallback.
+assert.equal(photoframePlatform.requiresVersionManifest, true);
+assert.deepEqual(photoframePlatform.versions, []);
+
+const photoframeOptions = firmwareOptions.filter((option) =>
+  option.id.startsWith("PhotoFrame_")
+);
+
+assert.deepEqual(
+  photoframeOptions.map((option) => option.id).sort(),
+  [
+    "PhotoFrame_reTerminal_E1002",
+    "PhotoFrame_reTerminal_E1003",
+    "PhotoFrame_reTerminal_E1004",
+  ]
+);
+
+for (const option of photoframeOptions) {
+  assert.equal(option.recommendedInstallMode, "erase");
+  assert.equal(
+    option.defaultVersion,
+    undefined,
+    `${option.id} must not hardcode a fallback version`
+  );
+  assert.ok(
+    option.flashNotes.some((note) => note.text.includes("full-chip image at 0x0")),
+    `${option.id} includes full-chip flashing guidance in flashNotes`
+  );
+  assert.ok(
+    !option.notes.some((note) => note.text.includes("full-chip image at 0x0")),
+    `${option.id} keeps flashing guidance out of setup notes`
+  );
+}
+
+assert.equal(BOARDS.length, 6);
+assert.equal(PANELS.length, 14);
+assert.deepEqual(
+  BOARDS.map((board) => board.id),
+  ["EE02", "EE03", "EE04", "EE05", "EN04", "EN05"]
+);
+assert.equal(getHardware("EE04")?.flashMethod, "serial");
+assert.equal(getHardware("EN04")?.flashMethod, "uf2");
+assert.equal(getHardware("EN04")?.uf2VolumeLabel, "XIAO-BOOT");
+assert.equal(getHardware("EE02")?.connector, "60-pin");
+assert.ok(isDriverBoard(getHardware("EE03")));
+assert.equal(isDriverBoard(getHardware("E1001")), false);
+assert.deepEqual(getCompatiblePanels("EE02").map((panel) => panel.id), ["P133_SP6"]);
+assert.deepEqual(getCompatiblePanels("EE03").map((panel) => panel.id), ["P103_MONO"]);
+assert.ok(getCompatiblePanels("EE04").some((panel) => panel.id === "P073_SP6"));
+assert.equal(getCompatiblePanels("EE05").some((panel) => panel.id === "P073_SP6"), false);
+assert.equal(getCompatiblePanels("EN05").some((panel) => panel.id === "P103_MONO"), false);
+
+const arduino = PLATFORM_CARDS.find((platform) => platform.id === "base");
+assert.ok(arduino.supportedDevices.includes("EE04"));
+assert.ok(arduino.supportedDevices.includes("EN05"));
+const helloOption = arduino.firmwareOptions.find((option) => option.id === "XIAO_EPaper_Hello");
+assert.ok(helloOption, "Hello ePaper combo firmware is registered");
+assert.equal(helloOption.comboPattern, "XIAO_EPaper_Hello_{board}_{panel}");
+assert.equal(
+  resolveComboFirmwareId(helloOption, "EE04", "P075_MONO"),
+  "XIAO_EPaper_Hello_EE04_P075_MONO"
+);
+assert.equal(resolveComboFirmwareId(helloOption, "EE04", ""), "");
+assert.equal(
+  resolveComboFirmwareId({ id: "RTC_PCF8563" }, "E1001", ""),
+  "RTC_PCF8563"
+);
+assert.deepEqual(
+  groupSupportedHardware(arduino.supportedDevices).map((group) => group.id),
+  ["reterminal", "EE", "EN"]
+);
+
+assert.deepEqual(
+  getCompatiblePlatforms("E1004").map((platform) => platform.id),
+  ["base", "sensecraft-hmi", "esphome", "trmnl", "eezstudio", "lvgl-epaper-status-panel", "tesserae", "photoframe"]
+);
+assert.deepEqual(
+  getCompatiblePlatforms("EE04").map((platform) => platform.id),
+  ["base", "sensecraft-hmi"]
+);
+assert.deepEqual(getCompatiblePlatforms("UNKNOWN"), []);
+
+for (const platform of PLATFORM_CARDS) {
+  for (const hardwareId of platform.supportedDevices) {
+    assert.ok(
+      getCompatiblePlatforms(hardwareId).includes(platform),
+      `${hardwareId} resolves back to ${platform.id}`
+    );
+  }
+}
+
+for (const panel of PANELS) {
+  assert.ok(panel.image, `${panel.id} has an image`);
+  assert.ok(Array.isArray(panel.compatibleBoards) && panel.compatibleBoards.length, `${panel.id} has compatible boards`);
+}
+
+console.log("firmwares metadata tests passed");

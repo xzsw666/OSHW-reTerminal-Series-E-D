@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reTerminal E-Series Firmware Hub</title>
+  <meta name="description" content="Flash ESP32-S3 firmware to your reTerminal E-Series device directly from the browser. No IDE setup required.">
+  <meta name="google-site-verification" content="Co1JUCd0H_hWpJomDLHoAQ5Pp_xolIw13Jx7ItUyc2o" />
+  <link rel="stylesheet" href="css/style.css?v=20260814-device-first-platforms">
+</head>
+<body>
+  <div class="page-backdrop" aria-hidden="true"></div>
+
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#">
+        <span class="brand-logo">
+          <img src="assets/brand/reterminal-epaper-icon.svg" alt="reTerminal ePaper icon">
+        </span>
+        <span class="brand-text">
+          <b>reTerminal E-Series</b>
+          <small>Firmware Hub</small>
+        </span>
+      </a>
+      <div class="topbar-links">
+        <a class="topbar-link" href="https://wiki.seeedstudio.com/reterminal_e10xx_main_page/" target="_blank" rel="noopener">
+          <svg class="nav-icon" viewBox="0 0 20 20" aria-hidden="true">
+            <path d="M4.5 3.5h8.2c1.55 0 2.8 1.25 2.8 2.8v10.2H6.1a2.6 2.6 0 0 1-2.6-2.6V4.5c0-.55.45-1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M6.8 7.2h5.8M6.8 10h6.4M6.8 12.8h4.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          Wiki
+        </a>
+        <a class="topbar-link" href="https://github.com/Seeed-Projects/OSHW-reTerminal-Series-E-D" target="_blank" rel="noopener">
+          <svg class="nav-icon" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.62 7.62 0 0 1 8 4.77c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.06-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.45.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" fill="currentColor"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-screen app body: focused setup flow + persistent monitor -->
+  <main class="app">
+
+    <!-- ============ LEFT: Firmware setup flow ============ -->
+    <section class="flow-col">
+      <section class="hero-panel" aria-labelledby="pageTitle">
+        <div class="hero-copy">
+          <p class="eyebrow">Browser firmware console</p>
+          <h1 id="pageTitle">Flash reTerminal E-Series demos without leaving the browser.</h1>
+          <p class="hero-sub">Choose your device, select a compatible platform, and monitor serial output from one focused workspace.</p>
+          <div class="hero-steps" aria-label="Firmware Hub workflow">
+            <span class="hero-step" data-step="1"><b>01</b><small>Choose</small></span>
+            <span class="hero-step" data-step="2"><b>02</b><small>Configure</small></span>
+            <span class="hero-step" data-step="3"><b>03</b><small>Flash</small></span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device-stack">
+            <img class="device-stack-main" src="assets/devices/reterminal-e1003.jpg" alt="">
+            <img class="device-stack-small device-stack-small-a" src="assets/devices/reterminal-e1001.jpg" alt="">
+            <img class="device-stack-small device-stack-small-b" src="assets/devices/reterminal-e1004.jpg" alt="">
+          </div>
+        </div>
+        <a class="hero-buy-link" href="https://www.seeedstudio.com/reTerminal-E1001-p-6534.html" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M4 3.25A1.75 1.75 0 0 0 2.25 5v7A1.75 1.75 0 0 0 4 13.75h7A1.75 1.75 0 0 0 12.75 12V9.5a.75.75 0 0 0-1.5 0V12a.25.25 0 0 1-.25.25H4a.25.25 0 0 1-.25-.25V5A.25.25 0 0 1 4 4.75h2.5a.75.75 0 0 0 0-1.5H4Zm5.5 0a.75.75 0 0 0 0 1.5h1.19L7.22 8.22a.75.75 0 1 0 1.06 1.06l3.47-3.47V7a.75.75 0 0 0 1.5 0V4a.75.75 0 0 0-.75-.75h-3Z"/>
+          </svg>
+          <span>Buy reTerminal E Series</span>
+        </a>
+      </section>
+
+      <article class="panel selection-panel" id="selectionPanel">
+        <div class="col-head">
+          <div class="col-head-titles">
+            <p class="eyebrow">Step 1</p>
+            <h2>Select device</h2>
+            <p class="col-sub">Choose your reTerminal or driver board first. Compatible platform workflows appear inside each device.</p>
+          </div>
+        </div>
+
+        <div class="alert alert-warning" id="browserWarning">
+          <strong>Web Serial unavailable.</strong>
+          <span>Open this page over HTTPS or localhost in desktop Chrome or Edge.</span>
+        </div>
+
+        <div class="hardware-grid" id="hardwareGrid"></div>
+      </article>
+
+      <article class="panel selected-panel step-panel is-hidden" id="selectedPanel">
+        <div class="panel-heading">
+          <div>
+            <h2>Selected setup</h2>
+          </div>
+          <button class="button button-secondary button-small" id="changeSelectionButton" type="button">Change selection</button>
+        </div>
+        <div class="selected-release" id="selectedRelease"></div>
+      </article>
+
+      <article class="panel step-panel is-hidden" id="versionPanel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Step 2</p>
+            <h2>Version and setup</h2>
+          </div>
+        </div>
+        <div class="setup-grid">
+          <div class="field-block is-hidden" id="panelField">
+            <span>Screen panel</span>
+            <select id="panelSelect"></select>
+          </div>
+          <div class="field-block is-hidden" id="firmwareField">
+            <span>Firmware option</span>
+            <select id="firmwareSelect"></select>
+          </div>
+          <div class="field-block is-hidden" id="languageField">
+            <span>Language</span>
+            <select id="languageSelect"></select>
+          </div>
+          <label class="field-block" for="versionSelect">
+            <span>Firmware version</span>
+            <select id="versionSelect"></select>
+          </label>
+          <div class="config-area" id="configArea"></div>
+        </div>
+      </article>
+
+      <article class="panel flash-panel step-panel is-hidden" id="flashPanel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Step 3</p>
+            <h2>Flash to device</h2>
+          </div>
+        </div>
+
+        <div class="install-mode">
+          <button class="mode-button is-active" type="button" id="modeStandard">Standard flash</button>
+          <button class="mode-button" type="button" id="modeErase">Erase flash + flash</button>
+        </div>
+
+        <div class="flash-notes" id="flashNotes"></div>
+
+        <div class="alert alert-warning install-note" id="installNote">
+          <strong>Firmware not published yet.</strong>
+          <span>This platform card is ready, but its web flashing package has not been added.</span>
+        </div>
+
+        <div class="alert alert-warning" id="errorAlert" role="alert">
+          <strong>Installation stopped</strong>
+          <span id="errorMessage"></span>
+        </div>
+
+        <div class="progress-row">
+          <div class="progress-label">
+            <span>Flash device</span>
+            <b id="flashValue">0%</b>
+          </div>
+          <div class="progress-track"><div class="progress-bar" id="flashBar"></div></div>
+          <small id="flashStatus">Select firmware and click Flash to begin</small>
+        </div>
+
+        <div class="flash-actions">
+          <button class="button button-flash" id="flashButton" type="button">
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none">
+              <path d="M7 1v8M7 9L4.5 6.5M7 9l2.5-2.5M2 12h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Connect &amp; flash
+          </button>
+          <button class="button button-flash is-hidden" id="disabledFlashButton" type="button" disabled>
+            Connect &amp; flash
+          </button>
+          <span class="flash-hint" id="flashHint">Connect your reTerminal with a USB data cable first.</span>
+        </div>
+
+        <div class="uf2-panel is-hidden" id="uf2Panel">
+          <p class="uf2-target">Target: <strong data-uf2-target>board + panel</strong></p>
+          <ol class="uf2-steps">
+            <li>Connect the board with a USB data cable.</li>
+            <li>Double-tap the reset button quickly until a drive named <strong data-uf2-volume>XIAO-BOOT</strong> appears.</li>
+            <li>Download the <code>.uf2</code> file, then copy it onto that drive. The board reboots when the copy finishes.</li>
+          </ol>
+          <div class="uf2-actions">
+            <a class="button button-flash is-disabled" id="uf2DownloadButton" href="#" aria-disabled="true">
+              Download .uf2
+            </a>
+            <button class="button button-secondary" id="uf2WriteButton" type="button" disabled>
+              Write to XIAO-BOOT
+            </button>
+          </div>
+          <p class="flash-hint">Prefer Chrome or Edge if you want the Hub to write the file directly to the drive.</p>
+        </div>
+
+        <div class="template-preview is-hidden" id="templatePreview">
+          <pre class="template-code" id="templateCode"></pre>
+        </div>
+
+        <div class="template-export-actions is-hidden" id="templateExportActions">
+          <button class="button button-flash" id="copyTemplateButton" type="button">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
+              <rect x="5" y="1" width="9" height="11" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M3 5H2.5A1.5 1.5 0 0 0 1 6.5v8A1.5 1.5 0 0 0 2.5 16h7a1.5 1.5 0 0 0 1.5-1.5V14" stroke="currentColor" stroke-width="1.4"/>
+            </svg>
+            Copy to clipboard
+          </button>
+          <button class="button button-flash" id="downloadTemplateButton" type="button">
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none">
+              <path d="M7 1v8M7 9L4.5 6.5M7 9l2.5-2.5M2 12h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Download file
+          </button>
+        </div>
+
+        <div class="download-guide is-hidden" id="downloadGuide">
+        </div>
+
+        <div class="download-actions is-hidden" id="downloadActions">
+          <a class="button button-flash" id="downloadProjectButton" href="downloads/EEZStudio.zip" download="EEZStudio.zip">
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none">
+              <path d="M7 1v8M7 9L4.5 6.5M7 9l2.5-2.5M2 12h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Download project template
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ RIGHT: Persistent monitor ============ -->
+    <aside class="monitor-col">
+      <article class="panel console-panel">
+        <div class="console-heading">
+          <div class="console-title">
+            <span class="monitor-led" aria-hidden="true"></span>
+            <h2>Device Log</h2>
+          </div>
+          <span class="serial-status" id="serialStatus"><i></i><b>Disconnected</b></span>
+        </div>
+
+        <div class="monitor-settings" aria-label="Monitor settings">
+          <div class="monitor-setting-row">
+            <span>Port</span>
+            <span class="monitor-port-status" id="monitorPortValue">Unavailable</span>
+          </div>
+          <div class="monitor-setting-row">
+            <label for="baudRateSelect">Baud rate</label>
+            <select id="baudRateSelect">
+              <option value="9600">9600</option>
+              <option value="57600">57600</option>
+              <option value="115200" selected>115200</option>
+              <option value="230400">230400</option>
+              <option value="460800">460800</option>
+              <option value="921600">921600</option>
+            </select>
+          </div>
+          <div class="monitor-setting-row">
+            <span>State</span>
+            <b id="monitorStateText">Disconnected</b>
+          </div>
+        </div>
+
+        <div class="monitor-buttons monitor-connection-actions">
+          <button class="button button-small" id="connectMonitorButton" type="button">Connect monitor</button>
+          <button class="button button-secondary button-small is-hidden" id="disconnectMonitorButton" type="button">Disconnect</button>
+        </div>
+
+        <pre id="log" aria-label="Serial output">[system] Serial monitor ready.
+[system] Use "Connect monitor" for debug logs or "Connect and flash" to install firmware.</pre>
+
+        <div class="monitor-actions">
+          <button class="button button-secondary button-small" id="pauseLogButton" type="button">Pause</button>
+          <button class="button button-secondary button-small" id="clearLogButton" type="button">Clear</button>
+          <button class="button button-small" id="saveLogButton" type="button">
+            <svg width="15" height="15" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 1v8M7 9L4.5 6.5M7 9l2.5-2.5M2 12h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Save log
+          </button>
+        </div>
+      </article>
+    </aside>
+
+  </main>
+
+  <span
+    id="firmwareStatsConfig"
+    data-api-url="https://sticky-firmware-install-stats.limengdu0117.workers.dev"
+    hidden
+  ></span>
+  <script src="js/log-buffer.js?v=20260608-log-throttle-2"></script>
+  <script src="js/serial-port-label.js?v=20260608-port-label"></script>
+  <script src="js/route-state.js?v=20260805-shareable-workflow-routes"></script>
+  <script src="js/firmware-install-stats.js?v=20260814-firmware-install-stats"></script>
+  <script src="js/firmwares.js?v=20260814-device-first-platforms"></script>
+  <script src="js/esphome-template.js?v=20260805-esphome-e1004"></script>
+  <script src="js/app.js?v=20260814-firmware-install-stats"></script>
+
+</body>
+</html>

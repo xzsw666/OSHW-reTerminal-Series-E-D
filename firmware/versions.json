@@ -1,0 +1,329 @@
+{
+  "Battery_Monitor": [
+    "2026.11.26"
+  ],
+  "Bus_Arrival_Display": [
+    "2026.11.26"
+  ],
+  "Buzzer_Control": [
+    "2026.11.26"
+  ],
+  "Buzzer_Music": [
+    "2026.11.26"
+  ],
+  "E1001_ChineseTextDemo": [
+    "2026.11.26"
+  ],
+  "E1002_ChineseTextDemo": [
+    "2026.11.26"
+  ],
+  "E1003_ChineseTextDemo": [
+    "2026.11.26"
+  ],
+  "E1003_SDcard_Slideshow": [
+    "2026.11.26"
+  ],
+  "E1003_TouchDraw": [
+    "2026.11.26"
+  ],
+  "E1004_ChineseTextDemo": [
+    "2026.11.26"
+  ],
+  "E1004_SDcard_Slideshow": [
+    "2026.11.26"
+  ],
+  "GxEPD2_reTerminal_E1001": [
+    "2026.11.26"
+  ],
+  "GxEPD2_reTerminal_E1001_Gray4": [
+    "2026.11.26"
+  ],
+  "GxEPD2_reTerminal_E1002": [
+    "2026.11.26"
+  ],
+  "GxEPD2_reTerminal_E1003": [
+    "2026.11.26"
+  ],
+  "GxEPD2_reTerminal_E1003_Gray16": [
+    "2026.11.26"
+  ],
+  "GxEPD2_reTerminal_E1004": [
+    "2026.11.26"
+  ],
+  "LED_Control_E1001": [
+    "2026.11.26"
+  ],
+  "LED_Control_E1003": [
+    "2026.11.26"
+  ],
+  "LED_Control_E1004": [
+    "2026.11.26"
+  ],
+  "LVGL_StatusPanel_E1001": [
+    "2026.11.26"
+  ],
+  "LVGL_StatusPanel_E1002": [
+    "2026.11.26"
+  ],
+  "LVGL_StatusPanel_E1003": [
+    "2026.11.26"
+  ],
+  "LVGL_StatusPanel_E1004": [
+    "2026.11.26"
+  ],
+  "LowPower_DeepSleep": [
+    "2026.11.26"
+  ],
+  "MicRecordToSD_E1001": [
+    "2026.11.26"
+  ],
+  "MicRecordToSD_E1003": [
+    "2026.11.26"
+  ],
+  "MicroSD_ListFiles": [
+    "2026.11.26"
+  ],
+  "PhotoFrame_reTerminal_E1002": [
+    "2.20.1"
+  ],
+  "PhotoFrame_reTerminal_E1003": [
+    "2.20.1"
+  ],
+  "PhotoFrame_reTerminal_E1004": [
+    "2.20.1"
+  ],
+  "RTC_PCF8563": [
+    "2026.11.26"
+  ],
+  "SD_ImagePipeline_E1001_BW": [
+    "2026.11.26"
+  ],
+  "SD_ImagePipeline_E1001_Gray4": [
+    "2026.11.26"
+  ],
+  "SD_ImagePipeline_E1002": [
+    "2026.11.26"
+  ],
+  "SD_ImagePipeline_E1003": [
+    "2026.11.26"
+  ],
+  "SD_ImagePipeline_E1004": [
+    "2026.11.26"
+  ],
+  "SHT4x_Sensor": [
+    "2026.11.26"
+  ],
+  "Seeed_GFX_E1001_Gray4": [
+    "2026.11.26"
+  ],
+  "SenseCraft_HMI_E1001": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_E1002": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_E1003": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_E1004": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE02_P133_SP6": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE03_P103_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE04_P0154_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE04_P0213_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE04_P0213_QUAD": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE04_P029_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE04_P029_QUAD": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE04_P0426_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE04_P073_SP6": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE04_P075_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE05_P0154_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE05_P0213_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE05_P0213_QUAD": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE05_P029_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE05_P029_QUAD": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE05_P0426_MONO": [
+    "1.1.5"
+  ],
+  "SenseCraft_HMI_EE05_P075_MONO": [
+    "1.1.5"
+  ],
+  "TRMNL_reTerminal_E1001": [
+    "1.8.10"
+  ],
+  "TRMNL_reTerminal_E1002": [
+    "1.8.10"
+  ],
+  "UserButtons": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE02_P133_SP6": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE03_P103_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P0154_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P0213_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P0213_QUAD": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P029_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P029_QUAD": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P0426_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P042_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P0583_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P073_SP6": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE04_P075_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE05_P0154_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE05_P0213_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE05_P0213_QUAD": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE05_P029_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE05_P029_QUAD": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE05_P0426_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE05_P042_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE05_P0583_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EE05_P075_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P0154_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P0213_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P0213_QUAD": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P029_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P029_QUAD": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P0426_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P042_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P0583_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P073_SP6": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN04_P075_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN05_P0154_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN05_P0213_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN05_P0213_QUAD": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN05_P029_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN05_P029_QUAD": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN05_P0426_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN05_P042_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN05_P0583_MONO": [
+    "2026.11.26"
+  ],
+  "XIAO_EPaper_Hello_EN05_P075_MONO": [
+    "2026.11.26"
+  ],
+  "ePaper_VoiceMemo_E1001": [
+    "2026.11.26"
+  ],
+  "ePaper_VoiceMemo_E1001_ZH": [
+    "2026.11.26"
+  ],
+  "ePaper_VoiceMemo_E1002": [
+    "2026.11.26"
+  ],
+  "ePaper_VoiceMemo_E1002_ZH": [
+    "2026.11.26"
+  ],
+  "ePaper_VoiceMemo_E1003": [
+    "2026.11.26"
+  ],
+  "ePaper_VoiceMemo_E1003_ZH": [
+    "2026.11.26"
+  ]
+}

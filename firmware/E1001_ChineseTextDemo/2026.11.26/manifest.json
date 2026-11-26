@@ -1,0 +1,33 @@
+{
+  "name": "E1001_ChineseTextDemo",
+  "version": "2026.11.26",
+  "flashSize": "keep",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "E1001_ChineseTextDemo.ino.bootloader.bin?sha256=11e0d446204ff66d",
+          "offset": 0
+        },
+        {
+          "path": "E1001_ChineseTextDemo.ino.partitions.bin?sha256=dde78cdd537d8917",
+          "offset": 32768
+        },
+        {
+          "path": "boot_app0.bin?sha256=f94c5d786a7a8fab",
+          "offset": 57344
+        },
+        {
+          "path": "E1001_ChineseTextDemo.ino.bin?sha256=1f94115dbf50a7be",
+          "offset": 65536
+        },
+        {
+          "path": "E1001_ChineseTextDemo.spiffs.bin?sha256=3a354f3498a8cd98",
+          "offset": 3211264
+        }
+      ]
+    }
+  ]
+}
